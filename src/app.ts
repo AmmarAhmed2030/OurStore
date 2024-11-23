@@ -3,14 +3,10 @@ import express, { Application, Request, Response } from "express";
 import routes from "./routes/index";
 
 const app: Application = express();
-const allowedOrigins = [
-  "https://medical-sage-iota.vercel.app",
-  "https://medical-panel.vercel.app",
-];
+
 app.use(
   cors({
     origin: "*",
-    credentials: true,
     methods: ["GET", "POST", "PATCH", "DELETE", "PUT"],
   })
 );
