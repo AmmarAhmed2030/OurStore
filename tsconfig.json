@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "target": "es2016",
-    "module": "commonjs",
-    "outDir": "./dist",
-    "esModuleInterop": true,
-    "strict": true,
-    "skipLibCheck": true
+    "target": "es2016", // Specifies ECMAScript target version
+    "module": "commonjs", // Uses CommonJS modules
+    "outDir": "./dist", // Output directory for compiled JS files
+    "rootDir": "./src", // Root directory for source files
+    "esModuleInterop": true, // Allows default imports from CommonJS modules
+    "strict": true, // Enables strict type-checking
+    "skipLibCheck": true // Skips type checking of declaration files
   },
-  "include": ["./src/*"],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*"], // Include all files in src folder
+  "exclude": ["node_modules", "dist"] // Exclude unnecessary folders
 }
