@@ -343,8 +343,8 @@ const getCheckoutSession = async (
       ],
       client_reference_id: appointmentId,
       mode: "payment",
-      success_url: `${frontendURL}`,
-      cancel_url: `${frontendURL}`,
+      success_url: `${frontendURL}/my-appointments`,
+      cancel_url: `${frontendURL}/my-appointments`,
     });
     if (!session) {
       res.status(400).json({
