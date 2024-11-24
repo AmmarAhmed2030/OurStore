@@ -8,9 +8,12 @@ const app: Application = express();
 const allowedOrigins = [
   "https://medical-sage-iota.vercel.app",
   "https://medical-panel.vercel.app",
+  "http://localhost:5174",
+  "http://localhost:5173",
+  "https://checkout.stripe.com",
 ];
 
-// CORS middleware
+//CORS middleware
 app.use(
   cors({
     origin: (origin, callback) => {
